@@ -1,6 +1,6 @@
-import 'dart:convert';
 
-import 'package:shared_preferences/shared_preferences.dart';
+
+// ignore_for_file: constant_identifier_names
 
 enum ECategoryType {
   food("Food"),

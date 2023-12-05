@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'dart:math';
 
 import 'package:budget_planner/model/category_item.dart';

@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_import
+
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:budget_planner/main.dart';
 import 'package:budget_planner/pages/home_page.dart';

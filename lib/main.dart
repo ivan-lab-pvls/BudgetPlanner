@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_import, sized_box_for_whitespace
+
 import 'package:budget_planner/pages/splash_page.dart';
 import 'package:budget_planner/theme_notifier.dart';
 import 'package:firebase_core/firebase_core.dart';

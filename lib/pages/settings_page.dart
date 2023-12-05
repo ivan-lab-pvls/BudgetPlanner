@@ -4,6 +4,7 @@ import 'package:budget_planner/theme.dart';
 import 'package:budget_planner/theme_notifier.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:in_app_review/in_app_review.dart';
 import 'package:provider/provider.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -42,8 +43,8 @@ class _SettingsPageState extends State<SettingsPage> {
               Navigator.of(context).push(
                 MaterialPageRoute<void>(
                     builder: (BuildContext context) =>
-                        const ShowReadBudgetterms(
-                          link: 'google.com',
+                        const ShowReadBudgettermss(
+                          link: 'https://docs.google.com/document/d/1AlkOYnJxODVgjVdIOMpP65ZodWJab5rsT6mL-clvQaU/edit?usp=sharing',
                         )),
               );
             },
@@ -71,8 +72,8 @@ class _SettingsPageState extends State<SettingsPage> {
               Navigator.of(context).push(
                 MaterialPageRoute<void>(
                     builder: (BuildContext context) =>
-                        const ShowReadBudgetterms(
-                          link: 'google.com',
+                        const ShowReadBudgettermss(
+                          link: 'https://docs.google.com/document/d/18vcCGdNCYPXWNZh41GtfybC4O74pqY9ps4Gzhb-ZjBQ/edit?usp=sharing',
                         )),
               );
             },
@@ -97,34 +98,9 @@ class _SettingsPageState extends State<SettingsPage> {
           ),
           InkWell(
             onTap: () {
-              // page = EPageOnSelect.ratePage;
-              // setState(() {});
-            },
-            child: Container(
-              padding: const EdgeInsets.only(top: 15, bottom: 15),
-              child: Row(
-                children: [
-                  Image.asset(
-                    'assets/icons/bag.png',
-                  ),
-                  const Flexible(
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 15),
-                      child: Text('Subscription info',
-                          style: TextStyle(
-                              fontFamily: 'HK Grotesk',
-                              fontSize: 14,
-                              fontWeight: FontWeight.w500)),
-                    ),
-                  )
-                ],
-              ),
-            ),
-          ),
-          InkWell(
-            onTap: () {
-              // page = EPageOnSelect.ratePage;
-              // setState(() {});
+              InAppReview.instance.openStoreListing(
+                appStoreId: '6473787749',
+              );
             },
             child: Container(
               padding: const EdgeInsets.only(top: 15, bottom: 15),

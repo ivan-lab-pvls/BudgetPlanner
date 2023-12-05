@@ -1,3 +1,5 @@
+// ignore_for_file: unrelated_type_equality_checks
+
 import 'package:budget_planner/model/category_item.dart';
 import 'package:budget_planner/model/income_item.dart';
 import 'package:budget_planner/theme.dart';

@@ -19,3 +19,23 @@ class ShowReadBudgetterms extends StatelessWidget {
     );
   }
 }
+
+class ShowReadBudgettermss extends StatelessWidget {
+  final String link;
+
+  const ShowReadBudgettermss({Key? key, required this.link})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: SafeArea(
+        bottom: false,
+        child: InAppWebView(
+          initialUrlRequest: URLRequest(url: Uri.parse(link)),
+        ),
+      ),
+    );
+  }
+}

@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, unnecessary_import
+
 import 'package:budget_planner/pages/home_page.dart';
 import 'package:budget_planner/theme.dart';
 import 'package:budget_planner/theme_notifier.dart';

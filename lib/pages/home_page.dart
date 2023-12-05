@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import, avoid_unnecessary_containers, unrelated_type_equality_checks
+
 import 'dart:convert';
 
 import 'package:budget_planner/model/category_item.dart';
